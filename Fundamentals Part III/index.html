@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        add7
+        */
+      console.log(
+        "Write a function called add7 that takes one number and returns that number + 7"
+      );
+      function add7Declaration(num) {
+        return num + 7;
+      }
+
+      let add7Expression = function (num) {
+        return num + 7;
+      };
+
+      let add7Arrow = (num) => num + 7;
+
+      console.log(`Function declaration (n=1): ${add7Declaration(1)}`);
+      console.log(`Function expression (n=1): ${add7Expression(1)}`);
+      console.log(`Arrow function (n=1): ${add7Arrow(1)}`);
+
+      /* 
+        multiply
+        */
+      console.log(
+        "Write a function called multiply that takes 2 numbers and returns their product."
+      );
+      function multiplyDeclaration(num1, num2) {
+        return num1 * num2;
+      }
+
+      let multiplyExpression = function (num1, num2) {
+        return num1 * num2;
+      };
+
+      let multiplyArrow = (num1, num2) => num1 * num2;
+
+      console.log(
+        `Function declaration (num1 = 3, num2 = 4): ${multiplyDeclaration(
+          3,
+          4
+        )}`
+      );
+      console.log(
+        `Function expression (num1 = 3, num2 = 4): ${multiplyExpression(3, 4)}`
+      );
+      console.log(
+        `Function arrow (num1 = 3, num2 = 4): ${multiplyArrow(3, 4)}`
+      );
+
+      /*
+        capitalize
+        */
+      console.log(
+        `Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. 
+        Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.`
+      );
+
+      function capitalizeDeclaration(string) {
+        const firstLetterCapitalized = string.charAt(0).toUpperCase();
+        const remainingLetters = string.slice(1).toLowerCase();
+        return firstLetterCapitalized + remainingLetters;
+      }
+
+      let capitalizeExpression = function (string) {
+        const firstLetterCapitalized = string.charAt(0).toUpperCase();
+        const remainingLetters = string.slice(1).toLowerCase();
+        return firstLetterCapitalized + remainingLetters;
+      };
+
+      let capitalizeArrow = (string) => {
+        const firstLetterCapitalized = string.charAt(0).toUpperCase();
+        const remainingLetters = string.slice(1).toLowerCase();
+        return firstLetterCapitalized + remainingLetters;
+      };
+
+      console.log(
+        `Function declaration (string=abcd): ${capitalizeDeclaration("abcd")}`
+      );
+      console.log(
+        `Function declaration (string=ABCD): ${capitalizeDeclaration("ABCD")}`
+      );
+      console.log(
+        `Function declaration (string=aBcD): ${capitalizeDeclaration("aBcD")}`
+      );
+      console.log(
+        `Function expression (string=abcd): ${capitalizeDeclaration("abcd")}`
+      );
+      console.log(
+        `Function expression (string=ABCD): ${capitalizeDeclaration("ABCD")}`
+      );
+      console.log(
+        `Function expression (string=aBcD): ${capitalizeDeclaration("aBcD")}`
+      );
+      console.log(
+        `Function arrow (string=abcd): ${capitalizeDeclaration("abcd")}`
+      );
+      console.log(
+        `Function arrow (string=ABCD): ${capitalizeDeclaration("ABCD")}`
+      );
+      console.log(
+        `Function arrow (string=aBcD): ${capitalizeDeclaration("aBcD")}`
+      );
+
+      /*
+      lastLetter
+      */
+      function lastLetterDeclaration(string) {
+        return string.slice(-1);
+      }
+
+      let lastLetterExpression = function (string) {
+        return string.slice(-1);
+      };
+
+      let lastLetterArrow = (string) => string.slice(-1);
+
+      console.log(
+        `Function declaration (string=abcd): ${lastLetterDeclaration("abcd")}`
+      );
+      console.log(
+        `Function expression (string=abcd): ${lastLetterExpression("abcd")}`
+      );
+      console.log(`Function arrow (string=abcd): ${lastLetterArrow("abcd")}`);
+    </script>
+  </body>
+</html>
